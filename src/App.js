@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Row from "./Row";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Netflix</h1>
+      <Row title="Netflix Originals" />
+      <Row title="Trending Now" />
     </div>
   );
 }
 
 export default App;
+
+// API key
+// 04f89ee403e12fd795090eb7725cf321
+
+// Example API request ( checkon postman)
+// https://api.themoviedb.org/3/movie/550?api_key=04f89ee403e12fd795090eb7725cf321
